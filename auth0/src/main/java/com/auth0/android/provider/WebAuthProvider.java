@@ -375,7 +375,7 @@ public class WebAuthProvider {
          * @param callback to receive the parsed results
          */
         public void start(@NonNull Activity activity, @NonNull AuthCallback callback) {
-            activity.overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+//            activity.overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
             this.start(activity, callback, 110);
         }
     }
