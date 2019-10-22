@@ -38,6 +38,7 @@ import android.util.Log;
 
 import com.auth0.android.Auth0;
 import com.auth0.android.Auth0Exception;
+import com.auth0.android.auth0.R;
 import com.auth0.android.authentication.AuthenticationException;
 
 import java.util.HashMap;
@@ -374,6 +375,7 @@ public class WebAuthProvider {
          * @param callback to receive the parsed results
          */
         public void start(@NonNull Activity activity, @NonNull AuthCallback callback) {
+            activity.overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
             this.start(activity, callback, 110);
         }
     }
