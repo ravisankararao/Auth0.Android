@@ -32,7 +32,7 @@
         <activity
             android:name="com.auth0.android.provider.AuthenticationActivity"
             android:exported="false"
-            android:launchMode="singleTask"
+            android:launchMode="singleInstance"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
